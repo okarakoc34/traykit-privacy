@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TrayKit Gizlilik Politikası · Privacy Policy</title>
+<meta name="description" content="TrayKit kişisel veri toplamaz. TrayKit does not collect personal data.">
+<style>
+  :root {
+    --bg: #f6f6fb; --card: #ffffff; --text: #1c1d2b; --muted: #5e6075;
+    --line: #e5e6f0; --accent: #4f46e5; --tile: #f0f0fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12131f; --card: #1c1d2d; --text: #eeeef6; --muted: #a7a9bf;
+      --line: #2e3044; --accent: #a5a0ff; --tile: #26283b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  input[name="lang"] { position: absolute; opacity: 0; pointer-events: none; }
+  #lang-tr:checked ~ .page [data-l="en"], #lang-en:checked ~ .page [data-l="tr"] { display: none; }
+
+  .hero {
+    position: relative; overflow: hidden; color: #fff; padding: 28px 24px 118px;
+    background:
+      radial-gradient(620px 420px at 12% 0%, rgba(63,140,255,.55), transparent 70%),
+      radial-gradient(760px 480px at 88% 100%, rgba(255,126,95,.6), transparent 70%),
+      linear-gradient(135deg, #10143c, #24226b 55%, #4a2a7c);
+  }
+  .bar { max-width: 780px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; }
+  .brand img { width: 34px; height: 34px; display: block; }
+  .switch { display: flex; padding: 3px; border-radius: 999px; background: rgba(255,255,255,.14); }
+  .switch label { padding: 4px 14px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer; color: rgba(255,255,255,.82); }
+  #lang-tr:checked ~ .page label[for="lang-tr"], #lang-en:checked ~ .page label[for="lang-en"] { background: #fff; color: #24226b; }
+  #lang-tr:focus-visible ~ .page label[for="lang-tr"], #lang-en:focus-visible ~ .page label[for="lang-en"] { outline: 2px solid #fff; outline-offset: 2px; }
+  .intro { max-width: 780px; margin: 52px auto 0; }
+  h1 {
+    margin: 0; font: 600 clamp(36px, 7vw, 54px)/1.12 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -.01em;
+  }
+  .intro p { margin: 14px 0 0; font-size: clamp(18px, 3vw, 21px); color: rgba(255,255,255,.86); max-width: 34em; }
+
+  main { max-width: 780px; margin: -82px auto 0; padding: 0 16px 56px; position: relative; }
+  .glance { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .glance div {
+    background: var(--card); border-radius: 16px; padding: 18px 20px;
+    box-shadow: 0 12px 32px rgba(16,20,60,.14);
+  }
+  .glance strong { display: block; font-size: 17px; line-height: 1.3; }
+  .glance span { display: block; margin-top: 4px; font-size: 15px; line-height: 1.45; color: var(--muted); }
+
+  .doc { margin-top: 16px; background: var(--card); border-radius: 16px; padding: 12px 32px 24px; box-shadow: 0 12px 32px rgba(16,20,60,.08); }
+  section { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { margin: 0 0 6px; font-size: 20px; font-weight: 600; line-height: 1.3; }
+  section p { margin: 0; color: var(--muted); }
+  section p + p { margin-top: 10px; }
+  section ul { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+  section ul + p { margin-top: 10px; }
+  a { color: var(--accent); }
+  .date { margin: 22px 4px 0; font-size: 14px; color: var(--muted); text-align: center; }
+
+  @media (max-width: 620px) {
+    .glance { grid-template-columns: 1fr; }
+    .doc { padding: 8px 20px 18px; }
+    .hero { padding-left: 16px; padding-right: 16px; }
+  }
+</style>
+</head>
+<body>
+<input type="radio" name="lang" id="lang-tr" aria-label="Türkçe" checked>
+<input type="radio" name="lang" id="lang-en" aria-label="English">
+<script>
+  if (!(navigator.language || "").toLowerCase().startsWith("tr")) {
+    document.getElementById("lang-en").checked = true;
+    document.documentElement.lang = "en";
+  }
+</script>
+<div class="page">
+  <header class="hero">
+    <div class="bar">
+      <div class="brand"><img src="data:image/png;base64,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" alt="">TrayKit</div>
+      <div class="switch">
+        <label for="lang-tr">TR</label>
+        <label for="lang-en">EN</label>
+      </div>
+    </div>
+    <div class="intro">
+      <div data-l="tr">
+        <h1>Gizlilik Politikası</h1>
+        <p>Verileriniz bilgisayarınızda kalır. TrayKit kişisel veri toplamaz ve hiçbir yere göndermez.</p>
+      </div>
+      <div data-l="en">
+        <h1>Privacy Policy</h1>
+        <p>Your data stays on your PC. TrayKit doesn't collect personal data or send it anywhere.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="glance" data-l="tr">
+      <div><strong>Veri toplamaz</strong><span>Analiz, reklam veya izleme yok.</span></div>
+      <div><strong>İnternete bağlanmaz</strong><span>Uygulama ağ bağlantısı kurmaz.</span></div>
+      <div><strong>Hesap gerekmez</strong><span>Kayıt olmadan kullanılır.</span></div>
+    </div>
+    <div class="glance" data-l="en">
+      <div><strong>No data collection</strong><span>No analytics, ads or tracking.</span></div>
+      <div><strong>No internet connection</strong><span>The app makes no network connections.</span></div>
+      <div><strong>No account</strong><span>Use it without signing up.</span></div>
+    </div>
+
+    <article class="doc" data-l="tr">
+      <section>
+        <h2>Toplanan veriler</h2>
+        <p>TrayKit sizden veya bilgisayarınızdan kişisel veri toplamaz ve geliştiriciye hiçbir veri iletmez. Uygulamada analiz aracı, reklam veya izleme yoktur.</p>
+      </section>
+      <section>
+        <h2>Bilgisayarınızda saklananlar</h2>
+        <p>Uygulamanın çalışması için şu bilgiler yalnızca kendi bilgisayarınızda, TrayKit'in veri klasöründe tutulur:</p>
+        <ul>
+          <li>Kısayol listeniz: verdiğiniz adlar ve dosya yolları</li>
+          <li>Ayarlarınız: tema, dil, kısayol tuşları ve kayıt klasörü</li>
+        </ul>
+        <p>Microsoft Store sürümünü kaldırdığınızda Windows bu klasörü de siler.</p>
+      </section>
+      <section>
+        <h2>Ekran görüntüleri</h2>
+        <p>Ekran görüntüsü yalnızca siz başlattığınızda alınır. Görüntü, seçiminize göre belirlediğiniz klasöre kaydedilir veya panoya kopyalanır. "Kaydet ve düzenle" seçeneğinde Windows'taki düzenleyicinizde açılır. TrayKit görüntüleri başka bir yere göndermez.</p>
+      </section>
+      <section>
+        <h2>Klavye</h2>
+        <p>Ctrl+Win gibi yalnızca değiştirici tuşlardan oluşan bir kısayol atandığında TrayKit, bu birleşimi tanımak için tuş basımlarını anlık olarak işler. Basılan tuşlar kaydedilmez, saklanmaz ve iletilmez.</p>
+      </section>
+      <section>
+        <h2>Dosyalar ve klasörler</h2>
+        <p>TrayKit yalnızca sizin listeye eklediğiniz öğeleri, siz istediğinizde açar.</p>
+      </section>
+      <section>
+        <h2>Üçüncü taraflar</h2>
+        <p>TrayKit verilerinizi kimseyle paylaşmaz. Uygulamayı Microsoft Store'dan indirmeniz Microsoft'un kendi gizlilik bildirimine tabidir.</p>
+      </section>
+      <section>
+        <h2>Çocuklar</h2>
+        <p>TrayKit kimseden kişisel veri toplamadığı için çocuklardan da toplamaz.</p>
+      </section>
+      <section>
+        <h2>Değişiklikler</h2>
+        <p>Bu politika değişirse güncel hâli bu sayfada yayımlanır ve aşağıdaki tarih yenilenir.</p>
+      </section>
+      <section>
+        <h2>İletişim</h2>
+        <p>Sorularınız için: Özer Karakoç, <a href="mailto:karakocozer@gmail.com">karakocozer@gmail.com</a></p>
+      </section>
+    </article>
+
+    <article class="doc" data-l="en">
+      <section>
+        <h2>Data we collect</h2>
+        <p>TrayKit doesn't collect personal data from you or your PC and doesn't send any data to the developer. The app contains no analytics, ads or tracking.</p>
+      </section>
+      <section>
+        <h2>What stays on your PC</h2>
+        <p>To work, the app keeps the following only on your own PC, in TrayKit's data folder:</p>
+        <ul>
+          <li>Your shortcut list: the names you give and the file paths</li>
+          <li>Your settings: theme, language, hotkeys and save folder</li>
+        </ul>
+        <p>When you uninstall the Microsoft Store version, Windows removes this folder too.</p>
+      </section>
+      <section>
+        <h2>Screenshots</h2>
+        <p>A screenshot is taken only when you start one. Depending on your choice, it is saved to the folder you picked or copied to the clipboard. "Save and edit" opens it in your Windows editor. TrayKit doesn't send screenshots anywhere.</p>
+      </section>
+      <section>
+        <h2>Keyboard</h2>
+        <p>When a modifier-only hotkey such as Ctrl+Win is assigned, TrayKit processes key presses momentarily to recognize that combination. Key presses are not recorded, stored or transmitted.</p>
+      </section>
+      <section>
+        <h2>Files and folders</h2>
+        <p>TrayKit opens only the items you add to your list, and only when you ask it to.</p>
+      </section>
+      <section>
+        <h2>Third parties</h2>
+        <p>TrayKit doesn't share your data with anyone. Downloading the app from the Microsoft Store is subject to Microsoft's own privacy statement.</p>
+      </section>
+      <section>
+        <h2>Children</h2>
+        <p>Because TrayKit doesn't collect personal data from anyone, it doesn't collect any from children either.</p>
+      </section>
+      <section>
+        <h2>Changes</h2>
+        <p>If this policy changes, the current version will be published on this page and the date below will be updated.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>For questions: Özer Karakoç, <a href="mailto:karakocozer@gmail.com">karakocozer@gmail.com</a></p>
+      </section>
+    </article>
+
+    <p class="date" data-l="tr">Yürürlük tarihi: 8 Kasım 2026</p>
+    <p class="date" data-l="en">Effective date: November 8, 2026</p>
+  </main>
+</div>
+</body>
+</html>
