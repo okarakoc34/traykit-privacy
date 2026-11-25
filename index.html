@@ -106,12 +106,12 @@
   <main>
     <div class="glance" data-l="tr">
       <div><strong>Veri toplamaz</strong><span>Analiz, reklam veya izleme yok.</span></div>
-      <div><strong>İnternete bağlanmaz</strong><span>Uygulama ağ bağlantısı kurmaz.</span></div>
+      <div><strong>Bilgisayarınızda kalır</strong><span>Kısayollar, görüntüler ve kayıtlar hiçbir yere gönderilmez.</span></div>
       <div><strong>Hesap gerekmez</strong><span>Kayıt olmadan kullanılır.</span></div>
     </div>
     <div class="glance" data-l="en">
       <div><strong>No data collection</strong><span>No analytics, ads or tracking.</span></div>
-      <div><strong>No internet connection</strong><span>The app makes no network connections.</span></div>
+      <div><strong>Stays on your PC</strong><span>Shortcuts, images and recordings are never sent anywhere.</span></div>
       <div><strong>No account</strong><span>Use it without signing up.</span></div>
     </div>
 
@@ -124,14 +124,25 @@
         <h2>Bilgisayarınızda saklananlar</h2>
         <p>Uygulamanın çalışması için şu bilgiler yalnızca kendi bilgisayarınızda, TrayKit'in veri klasöründe tutulur:</p>
         <ul>
-          <li>Kısayol listeniz: verdiğiniz adlar ve dosya yolları</li>
-          <li>Ayarlarınız: tema, dil, kısayol tuşları ve kayıt klasörü</li>
+          <li>Kısayol listeniz: verdiğiniz adlar, gruplar ve dosya yolları</li>
+          <li>Ayarlarınız: tema, dil, kısayol tuşları, kayıt klasörü ve dışa aktarma biçimi</li>
+          <li>Adım Kaydedici kayıtlarınız: adım görüntüleri, açıklamalar, notlar ve görüntülere eklediğiniz işaretler</li>
+          <li>Microsoft Edge WebView2'nin geçici dosyaları; XML Görüntüleyici ve PDF'e aktarma bu bileşeni kullanır</li>
         </ul>
         <p>Microsoft Store sürümünü kaldırdığınızda Windows bu klasörü de siler.</p>
       </section>
       <section>
         <h2>Ekran görüntüleri</h2>
         <p>Ekran görüntüsü yalnızca siz başlattığınızda alınır. Görüntü, seçiminize göre belirlediğiniz klasöre kaydedilir veya panoya kopyalanır. "Kaydet ve düzenle" seçeneğinde Windows'taki düzenleyicinizde açılır. TrayKit görüntüleri başka bir yere göndermez.</p>
+      </section>
+      <section>
+        <h2>Adım Kaydedici</h2>
+        <p>Adım Kaydedici yalnızca siz bir kayıt başlattığınızda çalışır. Kayıt sürerken TrayKit, tıklamaları algılamak için bir fare dinleyicisi kullanır. Dinleyici yalnızca tıklamanın yerini ve türünü öğrenir; kayıt bitince kaldırılır. Her tıklamada tıkladığınız ekranın görüntüsü alınır. Adımı açıklamak için tıkladığınız öğenin adı ve pencerenin başlığı Windows'un erişilebilirlik arabiriminden okunur.</p>
+        <p>Klavyede yazdıklarınız kaydedilmez. Kayıtlar yalnızca TrayKit'in veri klasöründe tutulur. PDF, Word veya HTML olarak dışa aktardığınız belgeler sizin seçtiğiniz yere kaydedilir. TrayKit kayıtları ve belgeleri hiçbir yere göndermez. Ekran görüntüleri o anda ekranda ne varsa onu içerdiği için bir belgeyi paylaşmadan önce adımlara göz atmanızı öneririz.</p>
+      </section>
+      <section>
+        <h2>XML Görüntüleyici</h2>
+        <p>Açtığınız XML dosyası yalnızca bilgisayarınızda, Microsoft Edge WebView2 ile görüntülenir. Dosyadaki betikler çalıştırılmaz; dosya başka dosyalara veya internete erişemez.</p>
       </section>
       <section>
         <h2>Klavye</h2>
@@ -143,7 +154,11 @@
       </section>
       <section>
         <h2>Üçüncü taraflar</h2>
-        <p>TrayKit verilerinizi kimseyle paylaşmaz. Uygulamayı Microsoft Store'dan indirmeniz Microsoft'un kendi gizlilik bildirimine tabidir.</p>
+        <p>TrayKit verilerinizi kimseyle paylaşmaz. Uygulamayı Microsoft Store'dan indirmeniz Microsoft'un kendi <a href="https://privacy.microsoft.com/">gizlilik bildirimine</a> tabidir.</p>
+      </section>
+      <section>
+        <h2>Satın alma</h2>
+        <p>Microsoft Store sürümünde Adım Kaydedici'nin dışa aktarma özelliği, uygulama içinden satın alınan Adım Kaydedici Pro ile açılır. Satın alma ve ödeme tamamen Microsoft Store üzerinden yapılır; TrayKit ödeme bilgilerinizi görmez. Uygulama, Windows'un Microsoft Store hizmetinden yalnızca eklentinin fiyatını ve sizde olup olmadığını öğrenir. TrayKit'in internetle kurduğu tek iletişim budur ve Microsoft'un gizlilik bildirimine tabidir. Kurulum dosyasıyla yüklenen sürüm Microsoft Store ile hiç iletişim kurmaz.</p>
       </section>
       <section>
         <h2>Çocuklar</h2>
@@ -168,14 +183,25 @@
         <h2>What stays on your PC</h2>
         <p>To work, the app keeps the following only on your own PC, in TrayKit's data folder:</p>
         <ul>
-          <li>Your shortcut list: the names you give and the file paths</li>
-          <li>Your settings: theme, language, hotkeys and save folder</li>
+          <li>Your shortcut list: the names and groups you give and the file paths</li>
+          <li>Your settings: theme, language, hotkeys, save folder and export format</li>
+          <li>Your Steps Recorder recordings: step images, descriptions, notes and the marks you add to images</li>
+          <li>Temporary files of Microsoft Edge WebView2, which the XML Viewer and PDF export use</li>
         </ul>
         <p>When you uninstall the Microsoft Store version, Windows removes this folder too.</p>
       </section>
       <section>
         <h2>Screenshots</h2>
         <p>A screenshot is taken only when you start one. Depending on your choice, it is saved to the folder you picked or copied to the clipboard. "Save and edit" opens it in your Windows editor. TrayKit doesn't send screenshots anywhere.</p>
+      </section>
+      <section>
+        <h2>Steps Recorder</h2>
+        <p>Steps Recorder runs only when you start a recording. While recording, TrayKit uses a mouse listener to detect clicks. The listener only learns where you clicked and with which button, and it is removed when the recording ends. On each click, a screenshot of the screen you clicked is taken. To describe the step, the name of the item you clicked and the window title are read through the Windows accessibility interface.</p>
+        <p>What you type is not recorded. Recordings are kept only in TrayKit's data folder. Documents you export as PDF, Word or HTML are saved where you choose. TrayKit doesn't send recordings or documents anywhere. Because screenshots contain whatever is on your screen at that moment, we recommend reviewing the steps before you share a document.</p>
+      </section>
+      <section>
+        <h2>XML Viewer</h2>
+        <p>An XML file you open is displayed only on your PC, using Microsoft Edge WebView2. Scripts in the file don't run, and the file can't access other files or the internet.</p>
       </section>
       <section>
         <h2>Keyboard</h2>
@@ -187,7 +213,11 @@
       </section>
       <section>
         <h2>Third parties</h2>
-        <p>TrayKit doesn't share your data with anyone. Downloading the app from the Microsoft Store is subject to Microsoft's own privacy statement.</p>
+        <p>TrayKit doesn't share your data with anyone. Downloading the app from the Microsoft Store is subject to Microsoft's own <a href="https://privacy.microsoft.com/">privacy statement</a>.</p>
+      </section>
+      <section>
+        <h2>Purchases</h2>
+        <p>In the Microsoft Store version, exporting in Steps Recorder is unlocked by Steps Recorder Pro, which you buy from within the app. The purchase and payment are handled entirely by the Microsoft Store; TrayKit never sees your payment details. The app only asks the Windows Microsoft Store service for the add-on's price and whether you own it. This is the only communication TrayKit has with the internet, and it is subject to Microsoft's privacy statement. The version installed with the setup file never communicates with the Microsoft Store.</p>
       </section>
       <section>
         <h2>Children</h2>
@@ -203,8 +233,8 @@
       </section>
     </article>
 
-    <p class="date" data-l="tr">Yürürlük tarihi: 8 Kasım 2026</p>
-    <p class="date" data-l="en">Effective date: November 8, 2026</p>
+    <p class="date" data-l="tr">Yürürlük tarihi: 25 Kasım 2026</p>
+    <p class="date" data-l="en">Effective date: November 25, 2026</p>
   </main>
 </div>
 </body>
